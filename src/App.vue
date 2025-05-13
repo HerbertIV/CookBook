@@ -1,15 +1,13 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import AppHeader from './components/AppHeader.vue'
-import AppFooter from './components/AppFooter.vue'
 
 const isLoading = ref(true)
 const route = useRoute()
 
 onMounted(() => {
   setTimeout(() => {
-    isLoading.ref = false
+    isLoading.value = false
   }, 500)
 })
 
