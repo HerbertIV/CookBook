@@ -1,0 +1,73 @@
+import { Recipe } from '../types'
+
+export const recipes: Recipe[] = [
+  {
+    id: 1,
+    title: 'Gofry w porshe',
+    description: 'Te gofry mogą wyjść tylko w porshe',
+    image: 'https://images.pexels.com/photos/221063/pexels-photo-221063.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    category: 'Deser',
+    prepTime: 3,
+    cookTime: 3,
+    servings: 10,
+    difficulty: 'Łatwe',
+    ingredients: [
+      '170 gr mąki',
+      '200 ml mleka',
+      '70 ml wody gazowanej',
+      '50 gr masła',
+      '3 szt jajek',
+      '0,5 łyżeczki proszku do pieczenia',
+      '8 gr cukru wanilinowego',
+      '20 gr cukru'
+    ],
+    instructions: [
+      'Z jajek oddzielamy białko od żółtka, resztę zmiksować razem',
+      'Na koniec ubijamy białko ze szczyptą soli, które następnie dodajemy do ciasta delikatnie mieszając',
+      'i gotowe, nagrzać porshe i robić gofry :-)'
+    ],
+    rating: 5,
+  },
+  {
+    id: 2,
+    title: 'Pancakes',
+    description: 'Mmmm pycha pancake!!',
+    image: 'https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    category: 'Deser',
+    prepTime: 3,
+    cookTime: 3,
+    servings: 10,
+    difficulty: 'Łatwe',
+    ingredients: [
+      'Ciasto: ',
+      '1 szt jajko',
+      '1 i 1/4 szklanki mleka',
+      '1/4 szklanki oleju',
+      '1 i 1/2 szklanki mąki',
+      '2 łyżeczki proszku do pieczenia',
+      '1 łyżeczka cukru',
+      'Masa cynamonowa: ',
+      '4 łyżki masła',
+      '1/4 szklanki cukru',
+      '2 łyżeczki cynamonu',
+      'Lukier: ',
+      'Cukier pudrowy',
+      'Sok pomarańczowy',
+      'Syrop klonowy',
+    ],
+    instructions: [
+      'Ciasto: ',
+      'Wszystko wymieszać (można dodać trochę cukru wanilinowego)',
+      'Włożyć na patelnię jako małe porcje (np. łyżką do lodów),',
+      'gdy na cieście pokażą się bombelki to nałożyć masę cynamonową.',
+      'Całość na koniec polać lukrem.',
+      'Masa cynamonowa: ',
+      'Roztopić masło, dodać do miski wszystko + trochę wcześniej przygotowanego ciasta i wymieszać,',
+      'żeby prościej nakładać to trzeba przełożyć masę do worka cukierniczego lub takiego z mocnej folii.',
+      'Lukier: ',
+      'Dodać cukru pudru, odrobinę soku pomarańczowego i syropu klonowego i wymieszać.',
+    ],
+    rating: 5,
+  },
+
+]
