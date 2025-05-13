@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=/CookBook/" />
+    <script type="text/javascript">
+      // Przekierowanie z zachowaniem ścieżki dla SPA
+      var path = location.pathname.replace(/^\/CookBook/, '');
+      location.replace('/CookBook/#' + path + location.search + location.hash);
+    </script>
+    <title>404 - Nie znaleziono strony</title>
+  </head>
+  <body>
+    <h1>404 - Nie znaleziono strony</h1>
+    <p>Przekierowuję na stronę główną aplikacji...</p>
+  </body>
+</html> 
