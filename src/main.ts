@@ -6,8 +6,8 @@ import RecipeList from './views/RecipeList.vue'
 import RecipeDetail from './views/RecipeDetail.vue'
 
 const routes = [
-  { path: '/', component: RecipeList, name: 'home' },
-  { path: '/recipe/:id', component: RecipeDetail, name: 'recipe-detail' }
+  { path: '/CookBook/', component: RecipeList, name: 'home' },
+  { path: '/CookBook/recipe/:id', component: RecipeDetail, name: 'recipe-detail' }
 ]
 
 const router = createRouter({
