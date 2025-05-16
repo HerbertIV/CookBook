@@ -18,5 +18,6 @@ export interface Shape {
   title: string;
   description: string;
   image: string;
+  capacity: number;
   sizes: object[];
 }
