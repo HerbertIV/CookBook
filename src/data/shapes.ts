@@ -48,6 +48,6 @@ export const shapes: Shape[] = [
     sizes: [
       {'diameter': 22.5}
     ],
-    capacity: 885.93
+    capacity: 2781
   },
 ]
