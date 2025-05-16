@@ -40,21 +40,26 @@ const toggleMenu = () => {
           @click="goHome"
           class="text-2xl font-bold text-primary-600 dark:text-primary-400 cursor-pointer"
         >
-          RecipeVue
+          Kuchenny przybornik
         </h1>
       </div>
       
       <!-- Desktop Navigation -->
       <nav class="hidden md:flex space-x-6">
         <router-link 
-          to="/" 
+          to="/"
+          activeClass="text-primary-500"
           class="font-medium hover:text-primary-500 transition-colors"
         >
-          Home
+          Przepisy
         </router-link>
-        <a href="#" class="font-medium hover:text-primary-500 transition-colors">Categories</a>
-        <a href="#" class="font-medium hover:text-primary-500 transition-colors">Favorites</a>
-        <a href="#" class="font-medium hover:text-primary-500 transition-colors">About</a>
+        <router-link
+            to="/shapes"
+            activeClass="text-primary-500"
+            class="font-medium hover:text-primary-500 transition-colors"
+        >
+          Formy do ciast
+        </router-link>
       </nav>
       
       <!-- Mobile Menu Button -->
@@ -95,15 +100,21 @@ const toggleMenu = () => {
       <div class="container mx-auto px-4 py-3">
         <div class="flex flex-col space-y-3">
           <router-link 
-            @click="isMenuOpen = false" 
+            @click="isMenuOpen = false"
+            activeClass="text-primary-500"
             to="/" 
             class="py-2 font-medium hover:text-primary-500 transition-colors"
           >
-            Home
+            Przepisy
           </router-link>
-          <a href="#" class="py-2 font-medium hover:text-primary-500 transition-colors">Categories</a>
-          <a href="#" class="py-2 font-medium hover:text-primary-500 transition-colors">Favorites</a>
-          <a href="#" class="py-2 font-medium hover:text-primary-500 transition-colors">About</a>
+          <router-link
+            @click="isMenuOpen = false"
+            activeClass="text-primary-500"
+            to="/shapes"
+            class="py-2 font-medium hover:text-primary-500 transition-colors"
+        >
+          Formy do ciast
+        </router-link>
         </div>
       </div>
     </div>

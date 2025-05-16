@@ -12,3 +12,11 @@ export interface Recipe {
   instructions: string[];
   rating: number;
 }
+
+export interface Shape {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  sizes: string[];
+}

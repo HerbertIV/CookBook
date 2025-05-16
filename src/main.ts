@@ -4,9 +4,11 @@ import './style.css'
 import App from './App.vue'
 import RecipeList from './views/RecipeList.vue'
 import RecipeDetail from './views/RecipeDetail.vue'
+import ShapeList from "./views/ShapeList.vue";
 
 const routes = [
   { path: '/', component: RecipeList, name: 'home' },
+  { path: '/shapes', component: ShapeList, name: 'shapes' },
   { path: '/recipe/:id', component: RecipeDetail, name: 'recipe-detail' }
 ]
 

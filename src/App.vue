@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
+import AppHeader from "./components/AppHeader.vue";
 
 const isLoading = ref(true)
 const route = useRoute()
@@ -21,6 +22,7 @@ watch(() => route.path, () => {
 
 <template>
   <div class="min-h-screen flex flex-col">
+    <AppHeader />
     <main class="flex-grow">
       <router-view v-slot="{ Component }">
         <transition :name="transitionName" mode="out-in">
