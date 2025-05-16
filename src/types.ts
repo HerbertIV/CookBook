@@ -19,5 +19,9 @@ export interface Shape {
   description: string;
   image: string;
   capacity: number;
-  sizes: object[];
+  sizes: {
+    long?: number;
+    short?: number;
+    diameter?: number;
+  }[];
 }

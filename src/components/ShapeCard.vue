@@ -1,12 +1,9 @@
 <script setup lang="ts">
-import {Shape} from '../types'
-import { useRouter } from 'vue-router'
+import {Shape} from "../types.ts";
 
-const props = defineProps<{
+defineProps<{
   shape: Shape
 }>()
-
-const router = useRouter()
 
 </script>
 
